@@ -1,0 +1,19 @@
+<div>
+  <style>
+    .btn {
+      border: 2px;
+      background-color: red;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      display: inline-block;
+    }
+  </style>
+
+  <%=@player1.name %> vs. <%=@player2.name %> (<%=@player2.hit_points%> hit points)<br>
+<br>
+<form action="/attack" method="post">
+  <button type="submit">Attack</button>
+  </form><br>
+  <br>
+</div>
